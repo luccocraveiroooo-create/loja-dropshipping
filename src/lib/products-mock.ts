@@ -18,6 +18,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80",
       "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+      "https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -53,6 +54,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -85,6 +87,8 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80",
       "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&q=80",
       "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&q=80",
+      "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=800&q=80",
+      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -118,6 +122,8 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
       "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
       "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=800&q=80",
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&q=80",
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -151,6 +157,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
       "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80",
       "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -186,6 +193,7 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
       "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=800&q=80",
       "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80",
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80",
     ],
     variants: {
       colors: [
