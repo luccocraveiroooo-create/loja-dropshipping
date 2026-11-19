@@ -22,6 +22,22 @@ export default function CheckoutPage() {
   const [paymentMethod, setPaymentMethod] = useState<"pix" | "card" | "boleto">("pix");
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [couponInput, setCouponInput] = useState("");
+  const [discountPercent, setDiscountPercent] = useState(0);
+  const [couponApplied, setCouponApplied] = useState("");
+  const [couponError, setCouponError] = useState("");
+
+  const handleApplyCoupon = (e: React.FormEvent) => {
+    e.preventDefault();
+    setCouponError("");
+    const clean = couponInput.trim().toUpperCase();
+    if (clean === "PRIME10" || clean === "VOLTE10") {
+      setDiscountPercent(10);
+      setCouponApplied(clean);
+    } else {
+      setCouponError("Cupom inválido ou expirado.");
+    }
+  };
   const [pixResult, setPixResult] = useState<{
     id: number | string;
     qrCodeBase64?: string;
@@ -377,11 +393,48 @@ export default function CheckoutPage() {
                 ))}
               </div>
 
+              {/* Campo de Cupom de Desconto */}
+              <div className="border-t pt-3">
+                <label className="text-[11px] font-bold text-gray-700 block mb-1">
+                  Possui Cupom de Desconto?
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={couponInput}
+                    onChange={(e) => setCouponInput(e.target.value)}
+                    placeholder="Ex: PRIME10"
+                    className="flex-1 p-2 bg-gray-50 border border-gray-200 rounded-lg text-xs uppercase font-mono font-bold outline-none focus:ring-1 focus:ring-emerald-500"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleApplyCoupon}
+                    className="px-3 py-2 bg-gray-900 hover:bg-black text-white text-xs font-bold rounded-lg transition"
+                  >
+                    Aplicar
+                  </button>
+                </div>
+                {couponApplied && (
+                  <p className="text-[11px] text-emerald-700 font-bold mt-1 flex items-center gap-1">
+                    ✓ Cupom {couponApplied} aplicado com sucesso (-10%)!
+                  </p>
+                )}
+                {couponError && (
+                  <p className="text-[11px] text-red-500 font-medium mt-1">{couponError}</p>
+                )}
+              </div>
+
               <div className="space-y-2 border-t pt-3 text-xs">
                 <div className="flex justify-between text-gray-500">
                   <span>Subtotal</span>
                   <span>{formatCurrency(subtotal)}</span>
                 </div>
+                {couponApplied && (
+                  <div className="flex justify-between text-emerald-700 font-bold">
+                    <span>Desconto do Cupom (10%)</span>
+                    <span>- {formatCurrency(subtotal * 0.1)}</span>
+                  </div>
+                )}
                 <div className="flex justify-between text-gray-500">
                   <span>Frete</span>
                   <span className="text-emerald-600 font-bold">GRÁTIS</span>
@@ -389,14 +442,20 @@ export default function CheckoutPage() {
                 {paymentMethod === "pix" && (
                   <div className="flex justify-between text-emerald-700 font-bold">
                     <span>Desconto PIX (5%)</span>
-                    <span>- {formatCurrency(subtotal * 0.05)}</span>
+                    <span>
+                      -{" "}
+                      {formatCurrency(
+                        (subtotal * (couponApplied ? 0.9 : 1)) * 0.05
+                      )}
+                    </span>
                   </div>
                 )}
                 <div className="flex justify-between text-base font-black text-gray-900 border-t pt-2">
                   <span>Total</span>
                   <span>
                     {formatCurrency(
-                      paymentMethod === "pix" ? subtotal * 0.95 : subtotal
+                      (subtotal * (couponApplied ? 0.9 : 1)) *
+                        (paymentMethod === "pix" ? 0.95 : 1)
                     )}
                   </span>
                 </div>

@@ -56,12 +56,16 @@ export function Footer() {
           </p>
         </div>
         <div className="flex items-center gap-3 text-xs text-gray-400">
-          <span>Política de Privacidade</span>
+          <Link href="/faq" className="hover:text-gray-200">
+            Dúvidas Frequentes (FAQ)
+          </Link>
           <span>•</span>
-          <span>Termos de Uso</span>
+          <Link href="/rastreio" className="hover:text-gray-200">
+            Rastrear Pedido
+          </Link>
           <span>•</span>
           <Link href="/sitemap.xml" className="hover:text-gray-200">
-            Mapa do Site (Sitemap)
+            Sitemap
           </Link>
         </div>
       </div>

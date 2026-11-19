@@ -95,4 +95,34 @@ export const PRODUCTS: Product[] = [
     description:
       "Leve o cinema com você para onde for. Ideal para filmes na cama, no teto, salas de reunião ou acampamentos.",
   },
+  {
+    id: "prod-4",
+    slug: "massageador-cervical-ems-pro",
+    title: "Massageador Cervical e Lombar Portátil EMS com Aquecimento Térmico",
+    tagline: "Alívio imediato de dores no pescoço, costas e ombros em menos de 15 minutos.",
+    price: 129.9,
+    originalPrice: 249.9,
+    installments: "12x de R$ 12,90",
+    rating: 4.9,
+    reviewsCount: 642,
+    stockLeft: 8,
+    images: [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    ],
+    variants: {
+      colors: [
+        { name: "Preto Nobre", hex: "#18181b" },
+        { name: "Branco Pérola", hex: "#f4f4f5" },
+      ],
+    },
+    features: [
+      "Tecnologia EMS com 8 modos de pulso e 19 intensidades",
+      "Compressa quente de 42°C para relaxamento muscular profundo",
+      "Design anatômico ergonômico e ultraleve (apenas 160g)",
+      "Recarregável via USB com desligamento automático inteligente",
+    ],
+    description:
+      "Diga adeus ao estresse e às dores musculares acumuladas no trabalho. O Massageador Cervical Pro combina pulsação eletromagnética TENS/EMS com aquecimento constante, estimulando a circulação sanguínea e relaxando a musculatura tensa em minutos.",
+  },
 ];
