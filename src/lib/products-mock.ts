@@ -16,6 +16,8 @@ export const PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
       "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&q=80",
       "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=800&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -35,6 +37,39 @@ export const PRODUCTS: Product[] = [
       "Desenvolvido para amantes de música e produtividade extrema. Com cancelamento ativo de ruído inteligente, drivers de titânio de 40mm e design ergonômico que não cansa o ouvido mesmo após horas de uso contínuo.",
   },
   {
+    id: "prod-4",
+    slug: "massageador-cervical-ems-pro",
+    title: "Massageador Cervical e Lombar Portátil EMS com Aquecimento Térmico",
+    tagline: "Alívio imediato de dores no pescoço, costas e ombros em menos de 15 minutos.",
+    price: 129.9,
+    originalPrice: 249.9,
+    installments: "12x de R$ 12,90",
+    rating: 4.9,
+    reviewsCount: 642,
+    stockLeft: 8,
+    images: [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    ],
+    variants: {
+      colors: [
+        { name: "Preto Nobre", hex: "#18181b" },
+        { name: "Branco Pérola", hex: "#f4f4f5" },
+      ],
+    },
+    features: [
+      "Tecnologia EMS com 8 modos de pulso e 19 intensidades",
+      "Compressa quente de 42°C para relaxamento muscular profundo",
+      "Design anatômico ergonômico e ultraleve (apenas 160g)",
+      "Recarregável via USB com desligamento automático inteligente",
+    ],
+    description:
+      "Diga adeus ao estresse e às dores musculares acumuladas no trabalho. O Massageador Cervical Pro combina pulsação eletromagnética TENS/EMS com aquecimento constante, estimulando a circulação sanguínea e relaxando a musculatura tensa em minutos.",
+  },
+  {
     id: "prod-2",
     slug: "smartwatch-titanium-ultra",
     title: "Smartwatch Titanium Ultra Series 9 com Monitor Cardíaco e GPS",
@@ -48,6 +83,8 @@ export const PRODUCTS: Product[] = [
     images: [
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
       "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80",
+      "https://images.unsplash.com/photo-1510017803434-a899398421b3?w=800&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -79,6 +116,8 @@ export const PRODUCTS: Product[] = [
     images: [
       "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800&q=80",
       "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
+      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80",
+      "https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=800&q=80",
     ],
     variants: {
       colors: [
@@ -94,35 +133,5 @@ export const PRODUCTS: Product[] = [
     ],
     description:
       "Leve o cinema com você para onde for. Ideal para filmes na cama, no teto, salas de reunião ou acampamentos.",
-  },
-  {
-    id: "prod-4",
-    slug: "massageador-cervical-ems-pro",
-    title: "Massageador Cervical e Lombar Portátil EMS com Aquecimento Térmico",
-    tagline: "Alívio imediato de dores no pescoço, costas e ombros em menos de 15 minutos.",
-    price: 129.9,
-    originalPrice: 249.9,
-    installments: "12x de R$ 12,90",
-    rating: 4.9,
-    reviewsCount: 642,
-    stockLeft: 8,
-    images: [
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
-    ],
-    variants: {
-      colors: [
-        { name: "Preto Nobre", hex: "#18181b" },
-        { name: "Branco Pérola", hex: "#f4f4f5" },
-      ],
-    },
-    features: [
-      "Tecnologia EMS com 8 modos de pulso e 19 intensidades",
-      "Compressa quente de 42°C para relaxamento muscular profundo",
-      "Design anatômico ergonômico e ultraleve (apenas 160g)",
-      "Recarregável via USB com desligamento automático inteligente",
-    ],
-    description:
-      "Diga adeus ao estresse e às dores musculares acumuladas no trabalho. O Massageador Cervical Pro combina pulsação eletromagnética TENS/EMS com aquecimento constante, estimulando a circulação sanguínea e relaxando a musculatura tensa em minutos.",
   },
 ];
