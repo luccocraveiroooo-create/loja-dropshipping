@@ -134,4 +134,72 @@ export const PRODUCTS: Product[] = [
     description:
       "Leve o cinema com você para onde for. Ideal para filmes na cama, no teto, salas de reunião ou acampamentos.",
   },
+  {
+    id: "prod-5",
+    slug: "pistola-massagem-muscular-pro",
+    title: "Pistola de Massagem Muscular Profissional Deep Tissue com 6 Ponteiras",
+    tagline: "Alívio imediato de fadiga, dores musculares profundas e nódulos de tensão.",
+    price: 169.9,
+    originalPrice: 329.9,
+    installments: "12x de R$ 16,90",
+    rating: 4.9,
+    reviewsCount: 780,
+    stockLeft: 6,
+    images: [
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&q=80",
+      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80",
+      "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+    ],
+    variants: {
+      colors: [
+        { name: "Preto Carbono", hex: "#18181b" },
+        { name: "Prata Titânio", hex: "#9ca3af" },
+        { name: "Verde Militar", hex: "#3f6212" },
+      ],
+    },
+    features: [
+      "Motor brushless ultra potente com 30 níveis de velocidade",
+      "6 ponteiras ergonômicas para todos os grupos musculares",
+      "Bateria de longa duração: até 6 horas de uso contínuo",
+      "Tecnologia Quiet Glide ultra silenciosa (< 45dB)",
+      "Tela touch digital LCD com indicador de carga e velocidade",
+    ],
+    description:
+      "A ferramenta favorita de atletas, fisioterapeutas e quem treina pesado. A Pistola de Massagem Deep Tissue fornece pulsos rápidos e concentrados que penetram profundamente nas fibras musculares, acelerando a recuperação e acabando com as dores corporais pós-treino ou de má postura.",
+  },
+  {
+    id: "prod-6",
+    slug: "difusor-aroma-nuvem-de-chuva",
+    title: "Umidificador e Difusor de Aromas Nuvem de Chuva com Ruído Branco Relaxante",
+    tagline: "Som realista de pingos de chuva que acalma a mente, reduz o estresse e melhora o sono.",
+    price: 149.9,
+    originalPrice: 289.9,
+    installments: "12x de R$ 14,90",
+    rating: 4.9,
+    reviewsCount: 532,
+    stockLeft: 9,
+    images: [
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+      "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=800&q=80",
+      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80",
+    ],
+    variants: {
+      colors: [
+        { name: "Branco Zen", hex: "#f4f4f5" },
+        { name: "Madeira Clara", hex: "#d97706" },
+      ],
+    },
+    features: [
+      "Efeito realista de gotas de chuva com som relaxante de ruído branco",
+      "Difusor de óleos essenciais para aromaterapia de lavanda e eucalipto",
+      "Iluminação noturna suave com 7 cores RGB relaxantes",
+      "Temporizador inteligente e desligamento automático quando a água acaba",
+    ],
+    description:
+      "Transforme o seu quarto em um santuário de paz e tranquilidade. O Difusor Nuvem de Chuva combina umidificação ultrassônica de ar com o efeito hipnotizante e o som suave de gotas de chuva caindo, criando a atmosfera perfeita para noites profundas de sono, meditação e alívio de estresse.",
+  },
 ];
