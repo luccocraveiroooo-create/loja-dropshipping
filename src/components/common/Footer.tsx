@@ -1,4 +1,5 @@
-import { ShieldCheck, Lock, Truck, RefreshCcw, Headphones } from "lucide-react";
+import Link from "next/link";
+import { ShieldCheck, Lock, Truck, RefreshCcw, Headphones, BookOpen } from "lucide-react";
 
 export function Footer() {
   return (
@@ -29,6 +30,23 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Links de SEO e Blog */}
+      <div className="max-w-6xl mx-auto px-4 py-4 border-b border-gray-800/60 flex flex-wrap items-center justify-between gap-3 text-[11px]">
+        <div className="flex items-center gap-2 text-emerald-400 font-semibold">
+          <BookOpen className="w-4 h-4" />
+          <span>Guia do Consumidor:</span>
+          <Link
+            href="/blog/review-fone-bluetooth-pro"
+            className="text-gray-300 hover:text-white underline decoration-emerald-500"
+          >
+            Review Completo: O Fone Bluetooth Pro Vale a Pena em 2026?
+          </Link>
+        </div>
+        <div className="text-gray-500">
+          Loja Oficial com PIX Transparente e Certificação SSL
+        </div>
+      </div>
+
       {/* Direitos e Informações Legais */}
       <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         <div>
@@ -42,7 +60,9 @@ export function Footer() {
           <span>•</span>
           <span>Termos de Uso</span>
           <span>•</span>
-          <span>Rastrear Pedido</span>
+          <Link href="/sitemap.xml" className="hover:text-gray-200">
+            Mapa do Site (Sitemap)
+          </Link>
         </div>
       </div>
     </footer>

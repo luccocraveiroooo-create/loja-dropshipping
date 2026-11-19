@@ -71,8 +71,41 @@ export default function ProductDetailPage({
     });
   };
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    image: product.images,
+    description: product.description,
+    brand: {
+      "@type": "Brand",
+      name: "PrimeStore",
+    },
+    offers: {
+      "@type": "Offer",
+      url: `https://loja-dropshipping-seven.vercel.app/produtos/${product.slug}`,
+      priceCurrency: "BRL",
+      price: product.price.toFixed(2),
+      priceValidUntil: "2027-12-31",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "PrimeStore Oficial Brasil",
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: product.rating.toString(),
+      reviewCount: product.reviewsCount.toString(),
+    },
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 pb-28 md:pb-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         
         {/* Galeria de Fotos */}
