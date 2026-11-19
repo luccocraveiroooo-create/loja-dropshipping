@@ -6,6 +6,7 @@ import { Footer } from "@/components/common/Footer";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { ExitIntentPopup } from "@/components/common/ExitIntentPopup";
+import { SalesNotificationToast } from "@/components/common/SalesNotificationToast";
 
 export const metadata: Metadata = {
   title: "PrimeStore | Loja Oficial de Tecnologia e Ofertas Exclusivas",
@@ -27,6 +28,7 @@ export default function RootLayout({
           <CartDrawer />
           <WhatsAppButton />
           <ExitIntentPopup />
+          <SalesNotificationToast />
         </CartProvider>
       </body>
     </html>
